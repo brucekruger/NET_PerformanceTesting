@@ -1,4 +1,6 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
 namespace PerformanceTesting
@@ -17,6 +19,16 @@ namespace PerformanceTesting
         public int Test200()
         {
             return Enumerable.Range(1, 200).Sum();
+        }
+    }
+
+    [TestClass]
+    public class UnitTestSum
+    {
+        [TestMethod]
+        public void RunTest()
+        {
+            BenchmarkRunner.Run<TestSum>();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text;
 
 namespace PerformanceTesting
@@ -39,6 +41,16 @@ namespace PerformanceTesting
                 myStringData.Append(SomeStringData);
             }
             return myStringData.Length;
+        }
+    }
+
+    [TestClass]
+    public class UnitTestStringConcat
+    {
+        [TestMethod]
+        public void RunTest()
+        {
+            BenchmarkRunner.Run<TestStringConcat>();
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace PerformanceTesting
 {
@@ -17,6 +19,16 @@ namespace PerformanceTesting
                 if (arg[i] == 'a') { res++; }
             }
             return res;
+        }
+    }
+
+    [TestClass]
+    public class UnitTestLetterACount
+    {
+        [TestMethod]
+        public void RunTest()
+        {
+            BenchmarkRunner.Run<TestLetterACount>();
         }
     }
 }
