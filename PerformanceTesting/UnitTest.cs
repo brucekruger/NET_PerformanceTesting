@@ -11,6 +11,7 @@ namespace PerformanceTesting
         {
             BenchmarkRunner.Run<TestSum>();
             BenchmarkRunner.Run<TestLetterACount>();
+            BenchmarkRunner.Run<TestStringConcat>();
         }
     }
 }

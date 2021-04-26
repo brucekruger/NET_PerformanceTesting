@@ -12,7 +12,7 @@ namespace PerformanceTesting
             return Enumerable.Range(1, 100).Sum();
         }
 
-        [Benchmark(Description = "Summ200", Baseline = true)]
+        [Benchmark(Description = "Summ200")]
         //[Benchmark(Description = "Summ200", Baseline = true)] to use as a base metric = 1 for relative comparison
         public int Test200()
         {
