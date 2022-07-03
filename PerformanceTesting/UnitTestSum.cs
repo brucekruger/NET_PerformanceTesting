@@ -2,6 +2,7 @@ using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
+using PerformanceTesting.Config;
 
 namespace PerformanceTesting
 {

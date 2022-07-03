@@ -3,7 +3,7 @@ using BenchmarkDotNet.Configs;
 using BenchmarkDotNet.Exporters;
 using BenchmarkDotNet.Exporters.Csv;
 
-namespace PerformanceTesting
+namespace PerformanceTesting.Config
 {
     public class TestConfig : ManualConfig
     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using PerformanceTesting.Config;
 
 namespace PerformanceTesting.SpanAndMemory
 {
